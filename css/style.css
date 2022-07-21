@@ -1,6 +1,74 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0px auto 0px;
+  align-items: center;
+  height: 100vh;
+}
+main div {
+  width: 50%;
+  height: 300px;
+}
+main :nth-child(1) h1 {
+  font-weight: 600;
+  color: #2742d5;
+}
+main :nth-child(1) p {
+  margin-top: 15px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.808);
+}
+fieldset {
+  width: 150px;
+  margin-top: 20px;
+  display: flex;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: rgba(189, 187, 187, 0.192);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  border: none;
+}
+fieldset button {
+  width: 30px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffa822;
+  border-radius: 50%;
+  padding-top: 2px;
+}
+fieldset input {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.192);
+}
+main :nth-child(1) a {
+  padding: 0.5rem 2rem;
+  background-color: #ffa822;
+  color: #1b32b8;
+  text-decoration: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  width: max-content;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+main div:nth-child(2) {
+  height: 315px;
+  position: relative;
+}
+main :nth-child(2) img {
+  height: 250px;
+  display: block;
+  position: absolute;
+  right: 0;
 }
