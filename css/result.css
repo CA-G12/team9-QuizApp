@@ -5,3 +5,37 @@
     font-family: "Poppins", sans-serif;
 
 }
+
+.congrat-text {
+	
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+padding: 30px 0;
+margin-top: 100px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.congratimage {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 300px;
+margin-top: 10px;
+
+
+}
+
+h1 {
+	text-align: center;
+	color:#2742D5;
+
+}
+
+p {
+	text-align: center;
+	font-weight: bold;
+	font-size: large;
+	color:#FFA822;
+}
