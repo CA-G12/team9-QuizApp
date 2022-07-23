@@ -50,7 +50,7 @@ fieldset input {
   border: none;
   background-color: rgba(255, 255, 255, 0.192);
 }
-main :nth-child(1) a {
+main :nth-child(1) #btn-get-start {
   padding: 0.5rem 2rem;
   background-color: #ffa822;
   color: #1b32b8;
@@ -61,6 +61,7 @@ main :nth-child(1) a {
   width: max-content;
   display: block;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
 }
 main div:nth-child(2) {
   height: 315px;
@@ -71,4 +72,11 @@ main :nth-child(2) img {
   display: block;
   position: absolute;
   right: 0;
+}
+#check-enter-username{
+  border-bottom: 2px #ffa822 solid;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.082);
+  display: none;
 }
