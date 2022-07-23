@@ -71,17 +71,10 @@ body{
      width: 26px;
      border: 2px solid transparent;
      border-radius: 50%;
+    
+
  }
- #quiz-box section .option-list .option .icon .right{
-     border-color: #23903c;
-     color: #23903c;
-     background : #d4edda
- }
- #quiz-box section .option-list .option .icon .wrong{
-     border-color: #a42834;
-     color: #a42834;
-     background : #d4edda
- }
+
  #quiz-box footer{
      width:100% ;
      height:60px ;
