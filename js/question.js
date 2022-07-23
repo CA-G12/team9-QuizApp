@@ -88,7 +88,6 @@ let Qus = document.querySelector(".que-test span");
 let option = document.querySelectorAll(".option span");
 let nextBtn = document.querySelector(".next-btn");
 let score = 0;
-
 let random;
 let counter = 0;
 function fillQusAndOptions() {
@@ -124,7 +123,6 @@ function selected(e) {
 function checkResult() {
   if (selectOption == questions[random][questions[random]["correct"]]) {
     score++;
-    // console.log(score);
   }
 }
 nextBtn.addEventListener("click", checkResult);

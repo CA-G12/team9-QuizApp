@@ -5,19 +5,19 @@
     font-family: "Poppins", sans-serif;
 }
 body{
-    background-color: #004085;
+    background-color: #bbbbbb36;
  }
  #quiz-box{
      width: 550px;
      margin-left: auto;
      margin-right: auto;
-     margin-top: 116px;
+     margin-top: 50px;
      border-radius: 5px;
  }
  #quiz-box header{
      position: relative;
      z-index: 99;
-     height: 70px;
+     height: 60px;
      padding :10px 30px;
      background: #fff;
      border-radius: 5px 5px 0 0;
@@ -38,7 +38,7 @@ body{
  }
  #quiz-box section .que-test{
      color: #004085c9;
-     font-size: 25px;
+     font-size: 22px;
      font-weight: 600;
  }
  #quiz-box section .option-list{
