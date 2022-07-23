@@ -17,7 +17,7 @@ function setItemLocal() {
       users.push(data);
       localStorage.setItem("users", JSON.stringify(users));
     } 
-    window.location.href = "../html/question.html";
+    window.location.href = "html/question.html";
 }else{
     let checkEnterUsername = document.getElementById("check-enter-username");
     checkEnterUsername.style.display='block'  
