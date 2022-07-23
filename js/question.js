@@ -87,15 +87,18 @@ var questions = [
 let Qus = document.querySelector(".que-test span");
 let option = document.querySelectorAll(".option span");
 let nextBtn = document.querySelector(".next-btn");
-// console.log(nextBtn);
+let score = 0;
+
 let random;
 let counter = 0;
 function fillQusAndOptions() {
   if (counter == 10) {
     window.location.href = "../html/result.html";
+    let users = JSON.parse(localStorage.getItem("users"));
+    users[users.length - 1]['score']=score
+    localStorage.setItem("users", JSON.stringify(users));
   }
   random = Math.floor(Math.random() * 10);
-  // console.log(random);
   Qus.textContent = questions[random]["question"];
   option[0].textContent = questions[random]["a"];
   option[1].textContent = questions[random]["b"];
@@ -109,7 +112,6 @@ fillQusAndOptions();
 
 //********************************************************************************/
 let optionList = document.querySelectorAll(".option-list .option");
-let score = 0;
 optionList[0].addEventListener("click", selected);
 optionList[1].addEventListener("click", selected);
 optionList[2].addEventListener("click", selected);
@@ -120,12 +122,9 @@ function selected(e) {
 }
 
 function checkResult() {
-  // console.log(selectOption)
-  // console.log(questions[random][questions[random]["correct"]])
   if (selectOption == questions[random][questions[random]["correct"]]) {
-    // console.log("hello World");
-    score++
-    console.log(score)
+    score++;
+    // console.log(score);
   }
 }
 nextBtn.addEventListener("click", checkResult);

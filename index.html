@@ -22,17 +22,17 @@
           will be able to check his score.
         </p>
         <fieldset>
-          <input type="text" placeholder="  Enter your name" /><button
-            type="submit"
-          >
+          <input id="user-name" type="text" placeholder="  Enter your name" /><button
+            type="submit" onclick="setItemLocal()">
             <ion-icon name="checkmark-outline"></ion-icon>
-          </button>
         </fieldset>
+        <button id="btn-get-start" type="submit">
+        Get Start
+        </button>
 
-        <a href="html/question.html">Get Start</a>
-        
       </div>
       <div><img src="images/quiz Logo.PNG" alt="logo" /></div>
+      <p id="check-enter-username">Please enter your username</p>
     </main>
     <script
       type="module"
